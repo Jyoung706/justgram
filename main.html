@@ -24,51 +24,49 @@
   </head>
   <body>
     <!-- 네비바 -->
-    <div class="navbar">
-      <div class="flex-row">
-        <!-- 네비바 왼쪽부분 -->
-        <div class="header-block flex-row">
-          <!-- 네비 왼쪽안에 왼쪽 -->
-          <div class="header-block leftarea-icon">
-            <img class="left-icon" src="img/instagram.png" />
-          </div>
-          <!-- 네비 왼쪽구역 가운데 -->
-          <div class="left-line"></div>
-          <!-- 네비 왼쪽구역 안의 오른쪽 -->
-          <div class="header-block">
-            <a class="leftarea-text">justgram</a>
-          </div>
+    <nav class="navbar">
+      <!-- 네비바 왼쪽부분 -->
+      <div class="header-block flex-row">
+        <!-- 네비 왼쪽안에 왼쪽 -->
+        <div class="header-block leftarea-icon">
+          <img class="left-icon" src="img/instagram.png" />
         </div>
-        <!-- 네비바 가운데 부분 -->
-        <div class="header-block searching-bar">
-          <!-- 검색바 컨테이너 -->
-          <div class="borderline2 flex-center">
-            <input class="searching" type="search" placeholder="검색" />
-          </div>
-        </div>
-        <!-- 네비바 오른쪽부분 -->
-        <div class="header-block div3icon">
-          <div class="borderline3">
-            <a
-              ><img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-            /></a>
-          </div>
-          <div class="borderline3">
-            <a
-              ><img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-            /></a>
-          </div>
-          <div class="borderline3">
-            <a
-              ><img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-            /></a>
-          </div>
+        <!-- 네비 왼쪽구역 가운데 -->
+        <div class="left-line"></div>
+        <!-- 네비 왼쪽구역 안의 오른쪽 -->
+        <div class="header-block">
+          <a class="leftarea-text">justgram</a>
         </div>
       </div>
-    </div>
+      <!-- 네비바 가운데 부분 -->
+      <div class="header-block searching-bar">
+        <!-- 검색바 컨테이너 -->
+        <div class="borderline2 flex-center">
+          <input class="searching" type="search" placeholder="검색" />
+        </div>
+      </div>
+      <!-- 네비바 오른쪽부분 -->
+      <div class="header-block div3icon">
+        <div class="borderline3">
+          <a
+            ><img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+          /></a>
+        </div>
+        <div class="borderline3">
+          <a
+            ><img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+          /></a>
+        </div>
+        <div class="borderline3">
+          <a
+            ><img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+          /></a>
+        </div>
+      </div>
+    </nav>
 
     <!-- 피드 구역 -->
     <div class="feed-container">
@@ -116,29 +114,28 @@
           <div class="like-text">
             <!-- 프로필이미지와 텍스트 -->
             <img class="text-img" src="/img/user.png" />
-            <span
-              ><strong>junyoung</strong>님 외 <strong>10명</strong>이
+            <span class="nickname"
+              >junyoung</span>님 외 <span class="font-bold">10명</span>이
               좋아합니다</span
             >
           </div>
           <!-- 피드설명 -->
           <div class="writing">
-            <span><strong>cannon_mj</strong></span>
+            <span class="nickname">cannon_mj</span>
             <span>위워크에서 진행한 우주선 클래스...</span>
             <span class="more-text">더 보기</span>
           </div>
           <!-- 댓글 창 -->
-          <div class="writing-text">
-            <div>
-              <span>
-                <strong>neceosecius</strong>
-                <span>거봐 좋았잖아~~~~🤷‍♀️</span>
-              </span>
-            </div>
-            <div>
-              <img class="comment-like-img" src="/img/heart.png" />
-            </div>
-          </div>
+          <ul class="comment-ul">
+            <li>
+              <span class="nickname"> neceosecius </span>
+              <span class="comment-text">거봐 좋았잖아~~~~🤷‍♀️</span>
+            </li>
+            <li>
+              <span class="nickname"> neceosecius </span>
+              <span class="comment-text">거봐 좋았잖아~~~~🤷‍♀️</span>
+            </li>
+          </ul>
           <!-- 시간표시 -->
           <div class="text-time">
             <span>42분 전</span>
@@ -154,14 +151,13 @@
             </div>
             <!-- 버튼인풋 -->
             <div class="comment-btn-container">
-              <button class="comment-btn">게시</button>
+              <button class="comment-btn" disabled>게시</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- 피드 구역 -->
+    <!-- 다음 추가할 피드는 css container 2적용바람! -->
     <div class="feed-container2">
       <!-- 피드 -->
       <div class="feed">
@@ -207,29 +203,28 @@
           <div class="like-text">
             <!-- 프로필이미지와 텍스트 -->
             <img class="text-img" src="/img/user.png" />
-            <span
-              ><strong>junyoung</strong>님 외 <strong>10명</strong>이
+            <span class="nickname"
+              >junyoung</span>님 외 <span class="font-bold">10명</span>이
               좋아합니다</span
             >
           </div>
           <!-- 피드설명 -->
           <div class="writing">
-            <span><strong>cannon_mj</strong></span>
+            <span class="nickname">cannon_mj</span>
             <span>위워크에서 진행한 우주선 클래스...</span>
             <span class="more-text">더 보기</span>
           </div>
           <!-- 댓글 창 -->
-          <div class="writing-text">
-            <div>
-              <span>
-                <strong>neceosecius</strong>
-                <span>거봐 좋았잖아~~~~🤷‍♀️</span>
-              </span>
-            </div>
-            <div>
-              <img class="comment-like-img" src="/img/heart.png" />
-            </div>
-          </div>
+          <ul class="comment-ul">
+            <li>
+              <span class="nickname"> neceosecius </span>
+              <span class="comment-text">거봐 좋았잖아~~~~🤷‍♀️</span>
+            </li>
+            <li>
+              <span class="nickname"> neceosecius </span>
+              <span class="comment-text">거봐 좋았잖아~~~~🤷‍♀️</span>
+            </li>
+          </ul>
           <!-- 시간표시 -->
           <div class="text-time">
             <span>42분 전</span>
@@ -245,14 +240,13 @@
             </div>
             <!-- 버튼인풋 -->
             <div class="comment-btn-container">
-              <button class="comment-btn">게시</button>
+              <button class="comment-btn" disabled>게시</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 피드 구역 -->
     <div class="feed-container2">
       <!-- 피드 -->
       <div class="feed">
@@ -298,29 +292,28 @@
           <div class="like-text">
             <!-- 프로필이미지와 텍스트 -->
             <img class="text-img" src="/img/user.png" />
-            <span
-              ><strong>junyoung</strong>님 외 <strong>10명</strong>이
+            <span class="nickname"
+              >junyoung</span>님 외 <span class="font-bold">10명</span>이
               좋아합니다</span
             >
           </div>
           <!-- 피드설명 -->
           <div class="writing">
-            <span><strong>cannon_mj</strong></span>
+            <span class="nickname">cannon_mj</span>
             <span>위워크에서 진행한 우주선 클래스...</span>
             <span class="more-text">더 보기</span>
           </div>
           <!-- 댓글 창 -->
-          <div class="writing-text">
-            <div>
-              <span>
-                <strong>neceosecius</strong>
-                <span>거봐 좋았잖아~~~~🤷‍♀️</span>
-              </span>
-            </div>
-            <div>
-              <img class="comment-like-img" src="/img/heart.png" />
-            </div>
-          </div>
+          <ul class="comment-ul">
+            <li>
+              <span class="nickname"> neceosecius </span>
+              <span class="comment-text">거봐 좋았잖아~~~~🤷‍♀️</span>
+            </li>
+            <li>
+              <span class="nickname"> neceosecius </span>
+              <span class="comment-text">거봐 좋았잖아~~~~🤷‍♀️</span>
+            </li>
+          </ul>
           <!-- 시간표시 -->
           <div class="text-time">
             <span>42분 전</span>
@@ -336,11 +329,12 @@
             </div>
             <!-- 버튼인풋 -->
             <div class="comment-btn-container">
-              <button class="comment-btn">게시</button>
+              <button class="comment-btn" disabled>게시</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="/js/main.js"></script>
 </html>
